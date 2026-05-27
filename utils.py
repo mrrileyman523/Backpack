@@ -8,11 +8,11 @@ def uniform_distribution(n, x):
                              "price": items_cost(x)})  
     return weight_cost
 
-# Нормальное распределение с математическим ожиданием 0.5 и стандартным отклонением 0.4
+# Нормальное распределение с математическим ожиданием 0.5 и стандартным отклонением 0.7
 def normal_distribution(n, x):
     weight_cost = []
     mat_expectation = 0.5
-    std_dev = 0.4
+    std_dev = 0.7
     while len(weight_cost) < n:
         weightN = random.gauss(mat_expectation, std_dev)
         if 0 < weightN < 1:
